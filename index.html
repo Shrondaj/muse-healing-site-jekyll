@@ -1,0 +1,268 @@
+---
+layout: default
+title: "Restoring Wholeness. Building Abundance."
+---
+
+<main class="min-h-screen">
+
+  <!-- ===== HERO ===== -->
+  <section class="section section-wide" id="home" style="min-height:100vh;display:flex;align-items:center;padding-top:120px;">
+    <div style="display:grid;gap:48px;align-items:center;width:100%;" class="hero-grid">
+
+      <!-- Left: Content -->
+      <div class="glass" style="padding:48px 64px;">
+        <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:24px;">
+          {% include muse-mark.html size=28 %}
+          <span style="font-size:0.7rem;font-family:var(--font-body);color:var(--spark-gold);text-transform:uppercase;letter-spacing:0.2em;">Holistic Community Action Program</span>
+        </div>
+
+        <h1 style="color:var(--raw-canvas);margin-bottom:24px;">
+          Restoring <span style="color:var(--healing-blush);">Wholeness.</span><br>
+          Building <span style="color:var(--spark-gold);">Abundance.</span>
+        </h1>
+
+        <p style="color:var(--flow-slate);font-size:1.1rem;max-width:480px;margin-bottom:40px;line-height:1.8;">
+          Transformative healing services that restore dignity, purpose, and joy to individuals
+          and families. With purpose, on purpose.
+        </p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+          <a href="#gift" class="btn btn-filled">Get Free Guide</a>
+          <a href="#services" class="btn">Explore Services</a>
+        </div>
+      </div>
+
+      <!-- Right: Stats -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="stats-grid">
+          <div class="stat-card glass">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Lives Transformed</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free First Session</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Crisis Support</div>
+          </div>
+          <div class="stat-card glass">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+
+        <div class="glass-purple" style="padding:32px;border-radius:20px;text-align:center;">
+          <p style="font-family:var(--font-accent);font-size:1.8rem;color:var(--healing-blush);margin-bottom:8px;">"with purpose on purpose"</p>
+          <p style="font-size:0.8rem;color:var(--flow-slate);text-transform:uppercase;letter-spacing:0.2em;">Shronda Jeanine &amp; Co.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FREE GIFT ===== -->
+  <section class="section section-wide" id="gift">
+    <div style="display:grid;gap:48px;align-items:center;" class="hero-grid">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;margin-bottom:24px;" class="glass-gold">
+          <span style="font-size:1.2rem;">🎁</span>
+          <span style="font-size:0.7rem;color:var(--spark-gold);text-transform:uppercase;letter-spacing:0.2em;">Free Gift for You</span>
+        </div>
+        <h2 style="color:var(--raw-canvas);margin-bottom:16px;">
+          Your Free <span style="color:var(--spark-gold);">Healing Guide</span>
+        </h2>
+        <p style="color:var(--flow-slate);font-size:1.05rem;margin-bottom:16px;line-height:1.8;">
+          Download our comprehensive guide: <em style="color:var(--healing-blush);">"7 Foundations of Holistic Healing"</em> — crafted from 15+ years of transformative work.
+        </p>
+        <ul style="color:var(--flow-slate);padding-left:20px;margin-bottom:24px;">
+          <li style="margin-bottom:8px;">✦ Understanding your healing archetype</li>
+          <li style="margin-bottom:8px;">✦ Daily rituals for emotional regulation</li>
+          <li style="margin-bottom:8px;">✦ Breaking generational trauma cycles</li>
+          <li>✦ Building your support ecosystem</li>
+        </ul>
+      </div>
+
+      <div class="glass" style="padding:40px;">
+        <h3 style="color:var(--raw-canvas);margin-bottom:8px;font-size:1.4rem;">Get Your Free Guide</h3>
+        <p style="color:var(--flow-slate);font-size:0.9rem;margin-bottom:24px;">Delivered instantly to your inbox.</p>
+        <form id="giftForm" onsubmit="handleGiftSubmit(event)">
+          <div class="form-group">
+            <label for="giftName">Your Name</label>
+            <input type="text" id="giftName" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label for="giftEmail">Email Address</label>
+            <input type="email" id="giftEmail" placeholder="your@email.com" required>
+          </div>
+          <button type="submit" class="btn btn-filled" style="width:100%;">Get My Free Guide →</button>
+          <p style="font-size:0.75rem;color:var(--flow-slate);opacity:0.6;text-align:center;margin-top:16px;">We respect your privacy. Unsubscribe anytime.</p>
+        </form>
+        <div id="giftSuccess" style="display:none;text-align:center;padding:32px 0;">
+          <div style="font-size:3rem;margin-bottom:16px;">✨</div>
+          <h3 style="color:var(--spark-gold);margin-bottom:8px;">Guide on its way!</h3>
+          <p style="color:var(--flow-slate);">Check your inbox. Your healing journey begins now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ CTA ===== -->
+  <section class="section section-wide">
+    <div class="glass glass-gold" style="max-width:768px;margin:0 auto;padding:64px;text-align:center;">
+      <div style="font-size:4rem;margin-bottom:24px;">🌟</div>
+      <h2 style="color:var(--raw-canvas);margin-bottom:16px;">
+        What's Your <span style="color:var(--spark-gold);">Healing Path</span>?
+      </h2>
+      <p style="color:var(--flow-slate);font-size:1.1rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;">
+        Take our 2-minute quiz to discover personalized resources tailored to your unique journey toward wholeness and abundance.
+      </p>
+      <a href="{{ site.baseurl }}/quiz/" class="btn btn-filled" style="font-size:1.1rem;padding:18px 40px;">Take the Quiz Now</a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section section-wide" id="services">
+    <div style="text-align:center;margin-bottom:64px;">
+      <span style="display:inline-block;padding:8px 16px;border-radius:999px;font-size:0.7rem;color:var(--spark-gold);text-transform:uppercase;letter-spacing:0.2em;margin-bottom:16px;" class="glass-gold">Our Services</span>
+      <h2 style="color:var(--raw-canvas);margin-bottom:16px;">
+        Tailored Support for Your <span style="color:var(--spark-gold);">Journey</span>
+      </h2>
+      <p style="color:var(--flow-slate);font-size:1.05rem;max-width:560px;margin:0 auto;">
+        Comprehensive healing services designed for individuals and families seeking transformation and growth.
+      </p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass-purple" style="border-radius:20px;">
+        <div class="service-icon">🤝</div>
+        <h3>Group Healing Sessions</h3>
+        <p>Connect with others on similar journeys in a safe, supportive environment. Our facilitated group sessions provide community, accountability, and collective healing.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+      <div class="service-card glass-gold" style="border-radius:20px;">
+        <div class="service-icon">💫</div>
+        <h3>One-on-One Coaching</h3>
+        <p>Personalized guidance tailored to your unique challenges and goals. Work directly with experienced coaches to create lasting change.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+      <div class="service-card glass-purple" style="border-radius:20px;">
+        <div class="service-icon">🆘</div>
+        <h3>Crisis Support</h3>
+        <p>Immediate support when you need it most. Our crisis intervention services provide compassionate care during difficult times.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+      <div class="service-card glass-sage" style="border-radius:20px;">
+        <div class="service-icon">👨‍👩‍👧‍👦</div>
+        <h3>Family Programs</h3>
+        <p>Strengthen family bonds and break generational cycles. Our family-centered approach brings healing to entire households.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+      <div class="service-card glass-purple" style="border-radius:20px;">
+        <div class="service-icon">🌱</div>
+        <h3>Trauma &amp; Addiction Therapy</h3>
+        <p>Evidence-based treatment for trauma and addiction. Our trauma-informed approach addresses root causes for lasting recovery.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+      <div class="service-card glass-gold" style="border-radius:20px;">
+        <div class="service-icon">💪</div>
+        <h3>Empowerment Workshops</h3>
+        <p>Build confidence, skills, and resilience through interactive workshops designed to unlock your full potential.</p>
+        <a href="#contact" style="color:var(--spark-gold);font-size:0.9rem;font-weight:500;display:inline-flex;align-items:center;gap:8px;margin-top:16px;">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="section section-wide" id="about">
+    <div class="glass" style="max-width:896px;margin:0 auto;padding:64px;text-align:center;position:relative;">
+      <div style="font-family:var(--font-display);font-size:6rem;color:var(--spark-gold);opacity:0.1;position:absolute;top:16px;left:50%;transform:translateX(-50%);line-height:1;">"</div>
+      <p style="font-family:var(--font-display);font-size:1.4rem;color:var(--raw-canvas);font-style:italic;line-height:1.6;margin-bottom:32px;position:relative;z-index:1;">
+        Shronda helped me find my voice when I thought I had lost it forever. Her compassionate approach and deep understanding of trauma created a safe space where healing became possible. I am forever grateful.
+      </p>
+      <div style="color:var(--spark-gold);font-weight:500;">— A Grateful Client</div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section section-wide" id="community">
+    <div class="glass-purple" style="max-width:768px;margin:0 auto;padding:64px;text-align:center;border-radius:20px;border:1px solid rgba(107,78,113,0.3);">
+      <h2 style="color:var(--raw-canvas);margin-bottom:16px;">
+        Join Our <span style="color:var(--healing-blush);">Community</span>
+      </h2>
+      <p style="color:var(--flow-slate);font-size:1.05rem;margin-bottom:32px;">
+        Receive weekly insights, healing resources, and exclusive updates delivered to your inbox.
+      </p>
+      <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)" style="display:flex;flex-wrap:wrap;gap:16px;max-width:480px;margin:0 auto;justify-content:center;">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required
+          style="flex:1;min-width:200px;padding:16px 24px;border-radius:12px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--raw-canvas);font-family:var(--font-body);font-size:1rem;">
+        <button type="submit" class="btn btn-filled" style="white-space:nowrap;">Subscribe</button>
+      </form>
+      <div id="newsletterSuccess" style="display:none;margin-top:24px;">
+        <span style="color:var(--spark-gold);font-family:var(--font-display);font-size:1.2rem;">✨ Welcome to the community!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SHRONDA ===== -->
+  <section class="section section-wide">
+    <div style="display:grid;gap:48px;align-items:center;" class="hero-grid">
+      <div class="img-glass" style="aspect-ratio:4/5;">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Shronda Jeanine - Healing practitioner" loading="lazy">
+      </div>
+      <div class="glass" style="padding:48px 64px;">
+        <span style="display:inline-block;padding:8px 16px;border-radius:999px;font-size:0.7rem;color:var(--spark-gold);text-transform:uppercase;letter-spacing:0.2em;margin-bottom:24px;" class="glass-gold">About Shronda</span>
+        <h2 style="color:var(--raw-canvas);margin-bottom:24px;">
+          Born of <span style="color:var(--spark-gold);">Grace</span>.<br>
+          Seeking <span style="color:var(--healing-blush);">Truth</span>.
+        </h2>
+        <p style="color:var(--flow-slate);margin-bottom:16px;line-height:1.8;">
+          With over 15 years of experience in holistic healing, trauma therapy, and community empowerment, I have dedicated my life to helping others find their path to wholeness.
+        </p>
+        <p style="color:var(--flow-slate);margin-bottom:32px;line-height:1.8;">
+          My approach combines evidence-based therapeutic techniques with deep spiritual wisdom, creating a safe container for transformation. Every person who walks through my door is met with zero assumptions and unconditional acceptance.
+        </p>
+        <div style="font-family:var(--font-accent);font-size:1.6rem;color:var(--spark-gold);opacity:0.9;">
+          "Every creation carries 72079."
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section section-wide" style="padding-bottom:96px;">
+    <div class="glass" style="max-width:768px;margin:0 auto;padding:64px;text-align:center;">
+      <h2 style="color:var(--raw-canvas);margin-bottom:16px;">
+        Ready to Begin Your <span style="color:var(--spark-gold);">Journey</span>?
+      </h2>
+      <p style="color:var(--flow-slate);font-size:1.05rem;margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;">
+        Your first session is always free. No obligations. Just presence, amplified to the power of ten billion.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+        <a href="tel:6027590158" class="btn btn-filled">Book Free Session</a>
+        <a href="mailto:shrondajeanine@shrondajeanineco.com" class="btn">Send a Message</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<style>
+@media (min-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+<script>
+function handleGiftSubmit(e) {
+  e.preventDefault();
+  document.getElementById('giftForm').style.display = 'none';
+  document.getElementById('giftSuccess').style.display = 'block';
+}
+function handleNewsletterSubmit(e) {
+  e.preventDefault();
+  document.getElementById('newsletterForm').style.display = 'none';
+  document.getElementById('newsletterSuccess').style.display = 'block';
+}
+</script>
